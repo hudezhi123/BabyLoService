@@ -2,6 +2,13 @@ package com.hdz.babyloservice.util;
 
 public class Constants {
 
+    public static final String BASE_URL = "http://192.168.137.1:8080/";
+
+    public static final String IMG_DIR = BASE_URL + "img/";
+
+    public static final String LOGIN = "/login";
+    public static final String ANIMAL_LIST = "/animalList";
+
     public static final int CODE_SUCCESS = 0;
     public static final int CODE_FAIL = 1;
     public static final String SUCCESS = "成功";
@@ -58,4 +65,6 @@ public class Constants {
     public static final String TIPS_PROTOCOL_SUCCESS = "获取协议内容成功";
     public static final String TIPS_PROTOCOL_FAIL = "获取协议内容失败";
 
+    public static final String TAG_ANIMAL = "动物";
+    public static final String TIPS_ANIMAL = "获取动物列表失败！";
 }
