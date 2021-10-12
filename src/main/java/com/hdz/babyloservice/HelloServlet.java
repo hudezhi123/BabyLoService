@@ -17,7 +17,11 @@ public class HelloServlet extends HttpServlet {
     }
 
     public void doGet(final HttpServletRequest request, final HttpServletResponse response) throws IOException {
-
+        // try {
+        // InsertService.doAction();
+        // } catch (final SQLException e) {
+        // e.printStackTrace();
+        // }
         response.setContentType("text/html");
         // Hello
         final PrintWriter out = response.getWriter();
