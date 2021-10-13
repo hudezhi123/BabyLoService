@@ -17,7 +17,7 @@ import com.hdz.babyloservice.util.StringUtils;
 /**
  * Servlet implementation class Login
  */
-@WebServlet(Constants.LOGIN)
+@WebServlet("/login")
 public class Login extends HttpServlet {
     private static final long serialVersionUID = 1L;
 

@@ -6,16 +6,19 @@ public class Animal {
 
     public Animal() {}
 
-    public Animal(final String name, final String desc, final String enName, final List<String> imgList) {
+    public Animal(final String name, final String desc, final String enName, final String headUrl,
+        final List<String> imgList) {
         this.name = name;
         this.desc = desc;
         this.enName = enName;
+        this.headUrl = headUrl;
         this.imgList = imgList;
     }
 
     private String name;
     private String desc;
     private String enName;
+    private String headUrl;
     List<String> imgList;
 
     public String getName() {
@@ -40,6 +43,14 @@ public class Animal {
 
     public void setEnName(final String enName) {
         this.enName = enName;
+    }
+
+    public String getHeadUrl() {
+        return this.headUrl;
+    }
+
+    public void setHeadUrl(final String headUrl) {
+        this.headUrl = headUrl;
     }
 
     public List<String> getImgList() {

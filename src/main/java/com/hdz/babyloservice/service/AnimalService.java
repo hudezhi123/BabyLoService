@@ -24,11 +24,12 @@ public class AnimalService extends BaseService {
             final int imgCount = reset.getInt(Constants.ANIMAL_IMG_COUNT);
             final String enName = reset.getString(Constants.ANIMAL_EN_NAME);
             final List<String> imgList = new ArrayList<>();
+            final String headUrl = Constants.IMG_DIR + "icon_" + enName + ".jpeg";
             for (int i = 1; i <= imgCount; i++) {
                 imgList.add(Constants.IMG_DIR + enName + i + ".jpeg");
             }
             animalList.add(new Animal(reset.getString(Constants.ANIMAL_NAME), reset.getString(Constants.ANIMAL_DESC),
-                enName, imgList));
+                enName, headUrl, imgList));
         }
         DBUtils.release(conn, stat, reset);
         return JsonUtils.createBaseJson(0, animalList, Constants.TAG_ANIMAL);

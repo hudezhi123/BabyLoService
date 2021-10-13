@@ -2,7 +2,7 @@ package com.hdz.babyloservice.util;
 
 public class Constants {
 
-    public static final String BASE_URL = "http://192.168.137.1:8080/";
+    public static final String BASE_URL = "http://192.168.2.84:8080/";
 
     public static final String IMG_DIR = BASE_URL + "img/";
 
